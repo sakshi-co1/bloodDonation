@@ -1,0 +1,22 @@
+/* body {
+    background-color: rgb(235, 217, 217);
+} */
+
+table {
+    background-color: rgb(197, 107, 107);
+    align-items: center;
+    flex-wrap: wrap;
+    table-layout: 0 auto;
+}
+
+thead {
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+tbody tr {
+    color: rgb(19, 15, 15);
+    margin-bottom: 30px;
+    text-align: center;
+}

@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    /* overflow: scroll; */
+}
+
+.mainpage {
+    height: 90vh;
+    width: 100%;
+    background-image: url('../images/main.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mainheader nav button {
+    justify-items: start;
+    color: white;
+    background: rgb(144, 8, 8);
+    /* padding: 8px; */
+    width: 170px;
+    /* margin-right: 0px; */
+    /* padding: 0px -2px -1px -20px; */
+    overflow: hidden;
+}
+
+.mainheader nav button:hover {
+    background: white;
+    color: rgb(144, 8, 8);
+}
+
+nav {
+    display: flexbox;
+    justify-content: space-around;
+    top: 5%;
+    color: white;
+    background: rgb(149, 6, 6);
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    /* padding: 10px 10px 10px 50px; */
+    justify-content: stretch;
+    font-size: large;
+    /* nav-left: current; */
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+a:hover {
+    color: brown;
+}
+
+
+/* Font */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    height: 230px;
+    max-width: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.btn {
+    /* color: #141313; */
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    cursor: grabbing;
+    border: 1px solid rgba(32, 28, 28, 0.2);
+    background: rgb(153, 27, 27);
+}
+
+.btn:hover {
+    background-color: rgba(9, 55, 155, 0.12);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(250, 248, 248, 0.568);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: linear-gradient(to bottom left, #0b3ad3 40%, #e63b3b 100%);
+}
+
+.card_content {
+    padding: 1rem;
+}
+
+.card_title {
+    color: #161515;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    text-align: center;
+}
+
+.card_text {
+    color: #f1e4e4;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.blocks {
+    overflow: hidden;
+}
+
+.head2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: QuickSand;
+    margin-bottom: 30px;
+}
+
+.column {
+    float: right;
+    width: 15%;
+    margin-left: 100px;
+    height: 130px;
+    margin-top: 40px;
+    background-color: rgb(184, 34, 28);
+    border-radius: 15px;
+}
+
+.column h2 {
+    text-align: center;
+    /* margin-top: 7px; */
+    bottom: 20px;
+    color: white;
+}
+
+.column p {
+    text-align: center;
+    /* margin-top: 10px; */
+    color: white;
+    font-size: 20px;
+    top: -34px;
+}
+
+.column1 {
+    float: center;
+    width: 15%;
+    margin-left: 100px;
+    height: 130px;
+    margin-top: 40px;
+    background-color: rgb(12, 92, 240);
+    border-radius: 15px;
+}
+
+.column1 h2 {
+    text-align: center;
+    color: white;
+    top: -20px;
+}
+
+.column1 p {
+    text-align: center;
+    margin-top: 7px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+
+/* ///// inputs /////*/
+
+input:focus~label,
+textarea:focus~label,
+input:valid~label,
+textarea:valid~label {
+    font-size: 0.85em;
+    color: rgb(160, 41, 41);
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .styled-input {
+        width: 100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide {
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 20px;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+input:focus~span,
+textarea:focus~span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 5em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #4b8cfb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    margin-left: 420px;
+}
+
+.submit-btn:hover {
+    background-color: #1a53b6;
+    transform: translate3d(0px 2px 5px);
+    box-shadow: 2px 4px 4px 0 rgba(253, 6, 6, 0.616), 0 3px 4px 0 rgba(202, 17, 17, 0.616);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width: 30%;
+        float: left;
+        text-align: center;
+    }
+}
+
+input[type=checkbox]+label {
+    color: #ccc;
+    font-style: italic;
+}
+
+input[type=checkbox]:checked+label {
+    color: #f00;
+    font-style: normal;
+}
